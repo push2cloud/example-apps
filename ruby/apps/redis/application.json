@@ -1,0 +1,9 @@
+{
+  "name": "cf-redis-example-app",
+  "version": "1.0.0",
+  "deployment": {
+    "serviceBinding": [
+      "my-db"
+    ]
+  }
+}

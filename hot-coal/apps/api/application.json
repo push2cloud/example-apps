@@ -1,0 +1,9 @@
+{
+  "name": "hot-coal-api",
+  "version": "1.0.0",
+  "deployment": {
+    "serviceBinding": [
+      "hot-coal-storage"
+    ]
+  }
+}

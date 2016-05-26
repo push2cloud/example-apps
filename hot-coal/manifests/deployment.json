@@ -1,0 +1,72 @@
+
+{
+  "name": "hot-coal-example",
+  "description": "deployment manifest for push2cloud hot-coal example",
+  "version": "1.0.0",
+  "target": {
+    "type": "cloudfoundry",
+    "api": "https://api.lyra-836.appcloud.swisscom.com",
+    "space": "${SPACE}",
+    "org": "${ORG}",
+    "delay": 500,
+    "maxRetries": 60
+  },
+  "release": {
+    "name": "hot-coal-example",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/push2cloud/example-apps.git",
+      "referenceValue": "master"
+    },
+    "manifest": "hot-coal/manifests/release.json"
+  },
+  "secureAppConnections": true,
+  "domains": {
+    "public": "scapp.io",
+    "internal": "scapp.io"
+  },
+  "serviceMapping": {
+    "*-storage": {
+      "type": "redis",
+      "plan": "small"
+    }
+  },
+  "applicationDefaults": {
+    "memory": "256",
+    "disk": "256M",
+    "instances": 1,
+    "startTimeout": 100,
+    "stageTimeout": 200,
+    "gracePeriod": 20
+  },
+  "apps": {
+    "hot-coal-api": {
+      "routes": {
+        "internal": [
+          "${appname}-${space}-${org}"
+        ]
+      }
+    },
+    "hot-coal-node": {
+      "routes": {
+        "public": [
+          "${appname}-${space}-${org}"
+        ]
+      }
+    },
+    "hot-coal-go": {
+      "routes": {
+        "public": [
+          "${appname}-${space}-${org}"
+        ]
+      }
+    },
+    "hot-coal-python": {
+      "routes": {
+        "public": [
+          "${appname}-${space}-${org}"
+        ]
+      }
+    }
+  }
+}

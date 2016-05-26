@@ -1,0 +1,16 @@
+{
+  "name": "push2cloud-ruby-example",
+  "description": "release manifest for push2cloud example in ruby",
+  "version": "1.0.0",
+  "source": {
+    "type": "git",
+    "url": "git@github.com:push2cloud/example-apps.git",
+    "referenceValue": "master"
+  },
+  "apps": {
+    "cf-redis-example-app": {
+      "path": "ruby/apps/redis",
+      "manifest": "application.json"
+    }
+  }
+}

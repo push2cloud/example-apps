@@ -1,0 +1,27 @@
+{
+  "name": "hot-coal-example",
+  "description": "release manifest for hot-coal example",
+  "version": "1.0.0",
+  "source": {
+    "type": "git",
+    "url": "https://github.com/push2cloud/example-apps.git",
+    "referenceValue": "master"
+  },
+  "apps": {
+    "hot-coal-api": {
+      "path": "hot-coal/apps/api",
+      "manifest": "application.json"
+    },
+    "hot-coal-node": {
+      "path": "hot-coal/apps/node"
+    },
+    "hot-coal-go": {
+      "path": "hot-coal/apps/go",
+      "manifest": "application.json"
+    },
+    "hot-coal-python": {
+      "path": "hot-coal/apps/python",
+      "manifest": "application.json"
+    }
+  }
+}

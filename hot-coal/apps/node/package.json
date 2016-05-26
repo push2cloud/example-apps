@@ -1,0 +1,30 @@
+{
+  "name": "hot-coal-node",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "deployment": {
+    "env": {},
+    "serviceBinding": [],
+    "appConnections": {
+      "hot-coal-go": {
+        "urls": {
+          "NEXT_APP_URL": ""
+        }
+      },
+      "hot-coal-api": {
+        "urls": {
+          "API_URL": ""
+        }
+      }
+    }
+  },
+  "engines": {
+    "node": ">=4.x"
+  },
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "restify": "^4.1.0"
+  }
+}

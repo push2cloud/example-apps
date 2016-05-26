@@ -1,0 +1,21 @@
+{
+  "name": "hot-coal-python",
+  "version": "1.0.0",
+  "deployment": {
+    "command": "python main.py",
+    "env": {},
+    "serviceBinding": [],
+    "appConnections": {
+      "hot-coal-node": {
+        "urls": {
+          "NEXT_APP_URL": ""
+        }
+      },
+      "hot-coal-api": {
+        "urls": {
+          "API_URL": ""
+        }
+      }
+    }
+  }
+}
