@@ -1,0 +1,54 @@
+{
+  "name": "push2cloud-java-example",
+  "version": "1.0.0",
+  "description": "deployment manifest for push2cloud java example",
+  "target": {
+    "type": "cloudfoundry",
+    "api": "https://api.lyra-836.appcloud.swisscom.com",
+    "space": "${SPACE}",
+    "org": "${ORG}",
+    "delay": 500,
+    "maxRetries": 60
+  },
+  "release": {
+    "name": "push2cloud-example",
+    "source": {
+      "type": "git",
+      "url": "git@github.com:push2cloud/example-apps.git",
+      "referenceValue": "master"
+    },
+    "manifest": "java/manifests/release.json"
+  },
+  "secureAppConnections": true,
+  "domains": {
+    "public": "scapp.io",
+    "internal": "scapp.io"
+  },
+  "serviceMapping": {
+    "*-db" : {
+      "type": "java",
+      "plan": "small"
+    }
+  },
+  "applicationDefaults": {
+    "memory": "512M",
+    "disk": "512M",
+    "instances": 1,
+    "startTimeout": 600,
+    "stageTimeout": 600,
+    "gracePeriod": 20,
+    "buildpack": "https://github.com/cloudfoundry/java-buildpack.git",
+    "env" : {
+      "SYSTEM_VERSION": "${SYSTEM_VERSION}"
+    }
+  },
+  "apps": {
+    "cf-java-example-app": {
+      "routes": {
+        "public": [
+          "cf-java-example-app-${space}"
+        ]
+      }
+    }
+  }
+}

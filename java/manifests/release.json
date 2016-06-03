@@ -1,0 +1,16 @@
+{
+  "name": "push2cloud-java-example",
+  "description": "release manifest for push2cloud example in java",
+  "version": "1.0.0",
+  "source": {
+    "type": "git",
+    "url": "git@github.com:push2cloud/example-apps.git",
+    "referenceValue": "master"
+  },
+  "apps": {
+    "cf-java-example-app": {
+      "path": "java/apps/java",
+      "manifest": "application.json"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "cf-java-example-app",
+  "version": "1.0.0",
+  "deployment": {
+    "path": "build/libs/java-1.0.jar",
+    "scripts": {
+      "package": [
+        "gradle jar"
+      ]
+    }
+  }
+}
