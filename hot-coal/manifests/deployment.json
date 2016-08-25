@@ -14,11 +14,11 @@
   "release": {
     "name": "hot-coal-example",
     "source": {
-      "type": "git",
-      "url": "https://github.com/push2cloud/example-apps.git",
+      "type": "fs",
+      "url": "./",
       "referenceValue": "master"
     },
-    "manifest": "hot-coal/manifests/release.json"
+    "manifest": "release.json"
   },
   "secureAppConnections": true,
   "domains": {

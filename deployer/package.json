@@ -13,18 +13,19 @@
   "dependencies": {
     "push2cloud-cf-adapter": "1.x.x",
     "push2cloud-cf-workflows": "1.x.x",
-    "push2cloud-cli": "1.x.x",
+    "push2cloud-cli": "2.x.x",
     "push2cloud-compiler-cf-app-connections": "1.x.x",
     "push2cloud-compiler-cf-app-versioning": "1.x.x",
-    "push2cloud-compiler-git-no-archive": "1.x.x",
+    "push2cloud-compiler-git-no-archive": "2.x.x",
+    "push2cloud-compiler-fs": "1.x.x",
     "push2cloud-compiler-cf-target-env": "1.x.x",
     "push2cloud-compiler-git-ref-env": "1.x.x",
     "push2cloud-compiler-vault": "1.x.x",
     "push2cloud-compiler-workspace-resolver": "1.x.x",
     "push2cloud-workflow-utils": "1.x.x",
     "debug": "2.2.0",
-    "async": "1.5.2",
-    "lodash": "4.2.1",
-    "semver": "5.1.0"
+    "async": "2.0.1",
+    "lodash": "4.15.0",
+    "semver": "5.3.0"
   }
 }
