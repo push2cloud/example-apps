@@ -16,7 +16,6 @@
     "source": {
       "type": "fs",
       "url": "./",
-      "referenceValue": "master"
     },
     "manifest": "release.json"
   },
