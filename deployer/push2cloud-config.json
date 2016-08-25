@@ -12,7 +12,6 @@
     ],
     "buildWorkspace": [
       "push2cloud-compiler-git-no-archive",
-      "push2cloud-compiler-fs",
       "push2cloud-compiler-workspace-resolver"
     ]
   }
