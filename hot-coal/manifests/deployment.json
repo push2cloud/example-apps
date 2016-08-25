@@ -15,7 +15,7 @@
     "name": "hot-coal-example",
     "source": {
       "type": "fs",
-      "url": "./",
+      "url": "./"
     },
     "manifest": "release.json"
   },
