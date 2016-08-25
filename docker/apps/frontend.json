@@ -1,0 +1,7 @@
+{
+  "name": "guestbook-frontend",
+  "version": "1.0.0",
+  "deployment": {
+    "dockerImage": "jamesclonk/guestbook-frontend"
+  }
+}

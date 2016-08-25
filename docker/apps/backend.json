@@ -1,0 +1,10 @@
+{
+  "name": "guestbook-backend",
+  "version": "1.0.0",
+  "deployment": {
+    "dockerImage": "jamesclonk/guestbook-backend",
+    "serviceBinding": [
+      "guestbook-db"
+    ]
+  }
+}

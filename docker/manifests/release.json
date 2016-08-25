@@ -1,0 +1,20 @@
+{
+  "name": "docker-example",
+  "description": "release manifest for docker example",
+  "version": "1.0.0",
+  "source": {
+    "type": "git",
+    "url": "https://github.com/push2cloud/example-apps.git",
+    "referenceValue": "master"
+  },
+  "apps": {
+    "guestbook-frontend": {
+      "path": "docker/apps",
+      "manifest": "frontend.json"
+    },
+    "guestbook-backend": {
+      "path": "docker/apps",
+      "manifest": "backend.json"
+    }
+  }
+}
