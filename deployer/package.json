@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "push2cloud example deployer",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "npm run compile:hot-coal",
+    "compile:hot-coal": "DEBUG=push2cloud* p2c compile -e ../hot-coal/manifests/deployment.json -c",
+    "compile:ruby": "DEBUG=push2cloud* p2c compile -e ../ruby/manifests/deployment.json -c",
+    "compile:java": "DEBUG=push2cloud* p2c compile -e ../java/manifests/deployment.json -c"
   },
   "author": "",
   "license": "MIT",
